@@ -4,5 +4,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff316;
     font-family: 'Luckiest Guy', cursive;
+  }
   
+  *{
+    font-family: 'Luckiest Guy', cursive;
+
   }
