@@ -5,8 +5,9 @@ body {
     background-color: #fff316;
     font-family: 'Luckiest Guy', cursive;
   }
-  
-  *{
-    font-family: 'Luckiest Guy', cursive;
 
+ 
+  @font-face{
+    font-family: 'Luckiest Guy', cursive;
+    src: url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
   }
