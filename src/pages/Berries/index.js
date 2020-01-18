@@ -38,8 +38,9 @@ const Berries = () => {
           (
             <>
                 <button style={{ marginTop: 40}} onClick={() => history.push('/')}>Voltar</button>
-
+                
                 <h1>Lista de Berries</h1>
+                <p>Barries são frutos que alimentam os pokemos:</p>
                 <p>Escolha o sabor e veja quais berries tem disponível</p>
                 <select name="berries" id="berries" onChange={loadBerries}>
                   {berryFlavor.map(flavor => <option key={flavor.name} value={flavor.name}>{flavor.name}</option>)}

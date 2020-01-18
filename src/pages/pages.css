@@ -27,7 +27,7 @@
 .img-box img{
     width: 30%px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
 }
 .main-berries{
@@ -45,6 +45,28 @@
     color: #fff;
     height: 30px;
     width: 200px;
+}
+.main-box-evolution{
+    text-align: center;
+    color: #12146e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-box-evolution h1{
+    font-size: 30px;
+}
+.box-evolution-details{
+    background-color: #fff;
+    width: 350px;
+    height: 330px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+    font-size: 15px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    color: #12146e;
+   
 }
 
 @media (max-width: 796px){
@@ -65,5 +87,8 @@
     }
     .main-berries select {
         width: 150px;
+    }
+    .box-evolution-details{
+        width: 250px;
     }
 }
