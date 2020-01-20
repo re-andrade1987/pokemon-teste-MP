@@ -23,6 +23,7 @@ const Main = () => {
         <div className='img-box'>
           <img src={pokemons} alt="img-pokemos" />
         </div>
+        <h3>Pokémon são criaturas de todas as formas e tamanhos que convivem com os humanos na natureza. Na grande maioria, os Pokémon não falam, exceto para proferir seus nomes. Os Pokémon são criados e comandados por seus donos (os chamados "Treinadores"). No decorrer das aventuras, os Pokémon crescem e ganham experiência, podendo até mesmo evoluir para Pokémon mais fortes.</h3>
       </div>
     </>
   )
