@@ -16,7 +16,7 @@ Para ter acesso ao projeto clone esse repositório no seu computador, depois de 
 
 ### `npm-install` instalar dependências
 
-### `npm start` iniciar aplicativo
+### `npm start` ou `yarn start` para iniciar aplicativo
 
 Depois de levantar o ambiente veja rodando em [http://localhost:3000](http://localhost:3000) no browser.
 
