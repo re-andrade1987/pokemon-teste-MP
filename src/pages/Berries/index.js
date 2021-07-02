@@ -17,6 +17,7 @@ const Berries = () => {
       const berryFlavorResponse = await api.get('berry-flavor');
       setBerryFlavor(berryFlavorResponse.data.results)
       setLoading(false);
+      console.log(berryFlavorResponse)
     }
     loadData();
   }, []);
@@ -45,16 +46,18 @@ const Berries = () => {
                 <select name="berries" id="berries" onChange={loadBerries}>
                   {berryFlavor.map(flavor => <option key={flavor.name} value={flavor.name}>{flavor.name}</option>)}
                 </select>
-                <div>
                   <h2>
                    Sabor: {selectedFlavor}
                   </h2>
-                  <ul>
+                  <div className="box-main">
                     {berriesList.map(berry =>
-                    <li key={berry.berry.name}>
-                    Tipo: {berry.berry.name}</li>)}
-                  </ul>
-                </div>
+                    <div key={berry.berry.name} className="box-pokemon" style={{ height: 140}}>
+                      <p>Tipo: {berry.berry.name}</p>
+                      <img alt={berry.berry.name} src={process.env.PUBLIC_URL +
+                      `/sprites/items/berries/${berry.berry.name}-berry.png`} /> 
+                    </div>
+                    )}                  
+                  </div>
             </>
           )
       }
