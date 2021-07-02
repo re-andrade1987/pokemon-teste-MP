@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import '../pages.css';
 import api from '../../services/api';
+import FadeIn from 'react-fade-in';
 
 const Berries = () => {
   const history = useHistory();
@@ -49,6 +50,8 @@ const Berries = () => {
                   <h2>
                    Sabor: {selectedFlavor}
                   </h2>
+                  <FadeIn>
+
                   <div className="box-main">
                     {berriesList.map(berry =>
                     <div key={berry.berry.name} className="box-pokemon" style={{ height: 140}}>
@@ -58,6 +61,7 @@ const Berries = () => {
                     </div>
                     )}                  
                   </div>
+                  </FadeIn>
             </>
           )
       }
